@@ -1,3 +1,3 @@
 # JAVASCRIPT
 
-im javascript legend
+im JAVASCRIPT legend
