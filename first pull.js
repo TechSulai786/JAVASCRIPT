@@ -1,4 +1,2 @@
-first pull
-
-
-dg
+ var x = "Im Tech Sulai Legend";
+ console.log(x);
