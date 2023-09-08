@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    
-    
-</head>
-<body>
-<h1 id="demo">Tech Sulai</h1>
+    <script src=""></script>
 
-<script>
-    let name = prompt("Hi");
-    console.log(name);
-</script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <h2>cm to inches</h2>
+        <div class="inputdiv">
+            <input type="text" name="" id="input" placeholder="length in cm">
+        </div>
+        <div>
+            <input type="submit" onclick="Convert()" value="Convert to inches">
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+
+    <script>
+        function Convert() {
+
+            let cmvalues = Number(document.getElementById("input").value)
+            let incvalues = cmvalues / 2.54;
+            let result = document.getElementById("result").innerHTML = incvalues.toFixed(2) + " Inches";
+        }
+    </script>
+
+
 </body>
 <footer>
     <p>Copyright &copy; 2023</p>
 </footer>
+
 </html>
