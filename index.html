@@ -6,36 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    
+  
 
 
 </head>
 
 <body>
     <div id="wrapper">
-        <h2>cm to inches</h2>
+        <h2>select a city</h2>
         <div class="inputdiv">
-            <input type="text" name="" id="input" placeholder="length in cm">
+           <select  id="input">
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="andhara">andhara</option>
+           </select>
         </div>
         <div>
-            <input type="submit" onclick="Convert()" value="Convert to inches">
+            <button id="myButton" type="submit">show stats</button>
         </div>
-        <div id="result">
-
-        </div>
+        
     </div>
 
 
-    <script>
-        function Convert() {
+ 
 
-            let cmvalues = Number(document.getElementById("input").value)
-            let incvalues = cmvalues / 2.54;
-            let result = document.getElementById("result").innerHTML = incvalues.toFixed(2) + " Inches";
-        }
-    </script>
-
-
+    <script src="script.js"></script>
 </body>
 <footer>
     <p>Copyright &copy; 2023</p>
